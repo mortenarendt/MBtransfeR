@@ -36,3 +36,8 @@ OTU table
 
 The data is further included as a phyloseq object in the R-package
 **MBtransfeR** found on this site
+
+    library(ggplot2)
+    ggplot(data = data.frame(x = rnorm(1000)), aes(x)) + geom_histogram()
+
+![](testtest_files/figure-markdown_strict/unnamed-chunk-1-1.png)

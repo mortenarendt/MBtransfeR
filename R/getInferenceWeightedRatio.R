@@ -15,7 +15,7 @@ getInferenceWeightedRatio <- function(res, trc=100, include = !logical(dim(res[[
   for (i in 1:niter){
     xx <- permSTAT[include,,i] %>%
       data.frame() %>%
-      mutate(Fisher_estimatetr = truncateZerosInf(Fisher_estimate,trm)) 
+      mutate(Fisher_estimatetr = truncateZerosInf(Fisher_estimate,trc)) 
     xx <- getWeightedRatio(xx$Fisher_estimatetr,xx$Fisher_p.value)
     tb <- rbind(tb,xx)
   }
