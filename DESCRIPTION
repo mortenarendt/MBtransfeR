@@ -1,0 +1,11 @@
+Package: MBtransfeR
+Title: What the Package Does (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person("Morten", "Rasmussen", email = "mortenr@food.ku.dk", role = c("aut", "cre"))
+Description: Collection of functions for characterising transfer between environments, by calculation of OR for each feature univariately, and check for enrichment of positive odds
+Depends: R (>= 3.5.1)
+Imports: stats, tidyverse, dplyr, broom, DescTools
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
